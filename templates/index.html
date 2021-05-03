@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello User!!!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>Please wait for 6 seconds to initialize react</h1>
+</body>
+<script>
+    axios.post('/katgaya', {
+            'uname': 'adi',
+        })
+        .then(res => {
+            console.log(res['data']['success']);
+        });
+</script>
+
+</html>
